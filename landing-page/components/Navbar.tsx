@@ -12,9 +12,10 @@ const pacifico = Pacifico({
 });
 
 const links = [
-    { href: "/", label: "Home" },
+   
     { href: "#menu", label: "Menu" },
     { href: "#about", label: "About" },
+     { href: "#reviews", label: "Reviews" },
 ];
 
 export default function Navbar() {
@@ -25,13 +26,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="h-20 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-3">
-                        <Image
-                            src="/coffe_logo.png"
-                            alt="logo"
-                            width={56}
-                            height={56}
-                            className="w-12 h-12 md:w-14 md:h-14"
-                        />
+                        
                         <span className={`${pacifico.className} text-white text-2xl md:text-3xl`}>
                             Coffee
                         </span>
@@ -47,10 +42,7 @@ export default function Navbar() {
                                 {link.label}
                             </Link>
                         ))}
-                        <button className="bg-[#784539] hover:bg-[#8a5246] transition-colors px-5 py-2 rounded-full flex items-center gap-2 text-white text-lg font-semibold">
-                            Order
-                            <FaCoffee />
-                        </button>
+                        
                     </nav>
 
                     <button

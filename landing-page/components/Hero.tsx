@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Pacifico } from "next/font/google";
 
 const pacifico = Pacifico({
@@ -33,9 +34,12 @@ export default function Hero() {
             <button className=" border border-white/20 text-white px-6 py-2.5 rounded-full font-semibold hover:border-white/40 transition-colors">
               Order Now
             </button>
-            <button className="text-white/80 px-6 py-2.5 rounded-full font-semibold border border-white/20 hover:border-white/40 hover:text-white transition-colors">
+            <Link
+              href="#menu"
+              className="text-white/80 px-6 py-2.5 rounded-full font-semibold border border-white/20 hover:border-white/40 hover:text-white transition-colors text-center"
+            >
               View Menu
-            </button>
+            </Link>
           </div>
         </div>
       </div>
