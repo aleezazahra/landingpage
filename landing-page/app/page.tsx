@@ -1,11 +1,22 @@
+import About from "@/components/About";
+import AppBanner from "@/components/AppBanner"
+import Footer from "@components/Footer";
+import Hero from "@/components/Hero";
+import Reviews from "@/components/Reviews";
+import Services from "@/components/Services";
+import Image from "next/image"
 
-"use client";
-import React from 'react'
-import Hero from "@/components/Hero"
 
-const Hero=()=>{
-     return <div className="h-full overflow-x-hidden">
-    <Hero />
+export default function Home(){
+  return (
+    <div className="overflow-x-hidden">
+      <Hero />
+      <Services />
+      <About />
+      <AppBanner />
+      <Reviews />
+      <Footer />
 
-  </div>
+    </div>
+  )
 }
